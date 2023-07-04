@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <table class="main-table">
+        <h1 style="color:white">Student CRUD operations</h1>
+        <tr class="saprater">
+            <td>
+                <form  onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div style="display: flex; gap: 40px;">
+                        <div>
+                            <label>Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Name">
+                        </div>
+                        <div>
+                            
+                            <input type="text" name="empCode" id="empCode" placeholder="Email">
+                        </div>
+                        <div>
+                            
+                            <input type="text" name="salary" id="salary" placeholder="GPA">
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 40px;">
+                        <div>
+                            
+                            <input type="text" name="city" id="city" placeholder="Age">
+                        </div>
+                        <div>
+                           
+                            <input type="text" name="city" id="degree" placeholder="Degree">
+                        </div>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Add A Student" id="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>GPA</th>
+                            <th>Degree</th>
+                            <th >Age</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="fatch">
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

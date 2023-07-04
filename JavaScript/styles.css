@@ -1,0 +1,99 @@
+
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-table td ,th{
+    border: none;
+}
+body{
+    height: 100vh;
+    background-color: black;
+}
+.saprater{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+.inputtag{
+    display: flex;
+}
+
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    
+    
+}
+.fa-solid{
+    font-size: 25px;
+    
+}
+.action{
+    display: flex;
+}
+table.list{
+    width:100%;
+    border: 1px solid white;
+}
+table.list td{
+    border-right:1px solid white;
+}
+table.list:nth-child(4) td{
+    border:none
+}
+.fatch td{
+   color: #dddddd
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: transparent;
+    color: #dddddd;
+}
+
+input[type=text]{
+    width: 100%;
+    color: #dddddd;
+    background: transparent;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form-action-buttons input{
+    display: block;
+    width: 200;
+   
+}
+input[type=submit]{
+    width: 40%;
+    background-color: #ddd;
+    color: #000000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+
+
+label.validation-error{
+    color:   red;
+    margin-left: 20px;
+}
+
+.hide{
+    display:none;
+}
